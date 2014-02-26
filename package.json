@@ -1,0 +1,29 @@
+{
+  "name": "soundbank-dipper",
+  "version": "0.0.0",
+  "description": "A global side-chain compressor for the Web Audio API. Modulate the amplitude of AudioNodes based on the amplitude of other AudioNodes.",
+  "main": "index.js",
+  "dependencies": {
+    "custom-audio-node": "~0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "beefy test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmckegg/soundbank-dipper.git"
+  },
+  "keywords": [
+    "waapi",
+    "sidechain",
+    "compressor",
+    "AudioNode"
+  ],
+  "author": "Matt McKegg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmckegg/soundbank-dipper/issues"
+  },
+  "homepage": "https://github.com/mmckegg/soundbank-dipper"
+}
