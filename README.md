@@ -21,15 +21,16 @@ var Dipper = require('soundbank-dipper')
 
 ### Dipper(audioContext)
 
-Create an AudioNode instance. In `"source"` mode, audio flows straight through, but is used to modulate the amplitude of all dipper nodes in `"modulator"` mode.
+Create an [AudioNode](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) instance. In `"source"` mode, audio flows straight through, but is used to modulate the amplitude of all dipper nodes in `"modulator"` mode.
 
 ### node.mode (get/set)
 
 Either `'source'`, or `'modulator'`. 
 
-### node.ratio ([AudioNode](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode))
+### node.ratio ([AudioParam](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam))
 
 Amount of dip effect to apply. Defaults to `1`.
+
 
 ## Example
 
