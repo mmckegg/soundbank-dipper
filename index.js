@@ -5,6 +5,9 @@ module.exports = Dipper
 function Dipper(audioContext){
   var dipper = initializeMasterDipper(audioContext)
   var input = audioContext.createGain()
+  var output = audioContext.createGain()
+
+  input.connect(output)
 
   var to = audioContext.createGain()
   var from = audioContext.createGain()
@@ -12,7 +15,7 @@ function Dipper(audioContext){
   input.connect(to)
   dipper.connect(from)
 
-  var node = createAudioNode(input, input, {
+  var node = createAudioNode(input, output, {
     ratio: {
       defaultValue: 1, min: 0,
       targets: [from.gain, to.gain]
@@ -31,14 +34,14 @@ function Dipper(audioContext){
           to.connect(dipper)
         } else {
           to.disconnect()
-          from.connect(input.gain)
+          from.connect(output.gain)
         }
         mode = value
       }
     }
   })
 
-  node.mode = 'source'
+  node.mode = 'modulate'
 
   return node
 }

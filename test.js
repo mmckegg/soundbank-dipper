@@ -8,7 +8,7 @@ sourceDipper.mode = 'source'
 sourceDipper.gain.value = 0.2
 
 var sidechainDipper = Dipper(audioContext)
-sidechainDipper.mode = 'modulator'
+sidechainDipper.mode = 'modulate'
 sidechainDipper.gain.value = 0.2
 
 sourceDipper.connect(audioContext.destination)

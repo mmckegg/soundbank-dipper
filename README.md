@@ -5,7 +5,7 @@ A global side-chain compressor for the Web Audio API. Modulate the amplitude of 
 
 A dipper is global to the current audioContext. If you need separate dipper contexts, use `var newContext = Object.create(audioContext)`.
 
-Intended for use as a processor in [soundbank](https://github.com/mmckegg/soundbank), but it is compatible with any Web Audio API AudioNode set up.
+Intended for use as a processor in [soundbank](https://github.com/mmckegg/soundbank), but it is compatible with any [Web Audio API](https://developer.mozilla.org/en-US/docs/Web_Audio_API) AudioNode set up.
 
 ## Install
 
@@ -21,11 +21,11 @@ var Dipper = require('soundbank-dipper')
 
 ### Dipper(audioContext)
 
-Create an [AudioNode](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) instance. In `"source"` mode, audio flows straight through, but is used to modulate the amplitude of all dipper nodes in `"modulator"` mode.
+Create an [AudioNode](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode) instance. In `"source"` mode, audio flows straight through, but is used to modulate the amplitude of all dipper nodes in `"modulate"` mode.
 
 ### node.mode (get/set)
 
-Either `'source'`, or `'modulator'`. 
+Either `'source'`, or `'modulate'`. 
 
 ### node.ratio ([AudioParam](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam))
 
