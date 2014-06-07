@@ -1,6 +1,6 @@
 {
   "name": "soundbank-dipper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A global side-chain compressor for the Web Audio API. Modulate the amplitude of AudioNodes based on the amplitude of other AudioNodes.",
   "main": "index.js",
   "dependencies": {
