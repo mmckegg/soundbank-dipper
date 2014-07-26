@@ -1,6 +1,6 @@
 var Dipper = require('./index')
 
-var audioContext = new webkitAudioContext()
+var audioContext = new AudioContext()
 
 
 var sourceDipper = Dipper(audioContext)
